@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		BCD2837428FDE49200C181AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2837328FDE49200C181AF /* AppDelegate.swift */; };
 		BCD2837628FDE49200C181AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2837528FDE49200C181AF /* SceneDelegate.swift */; };
-		BCD2837828FDE49200C181AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2837728FDE49200C181AF /* ViewController.swift */; };
+		BCD2837828FDE49200C181AF /* DessertsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2837728FDE49200C181AF /* DessertsListViewController.swift */; };
 		BCD2837B28FDE49200C181AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD2837928FDE49200C181AF /* Main.storyboard */; };
 		BCD2837D28FDE49300C181AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD2837C28FDE49300C181AF /* Assets.xcassets */; };
 		BCD2838028FDE49300C181AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD2837E28FDE49300C181AF /* LaunchScreen.storyboard */; };
 		BCD2838B28FDE49300C181AF /* fetchdessertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2838A28FDE49300C181AF /* fetchdessertsTests.swift */; };
 		BCD2839528FDE49300C181AF /* fetchdessertsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2839428FDE49300C181AF /* fetchdessertsUITests.swift */; };
 		BCD2839728FDE49300C181AF /* fetchdessertsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2839628FDE49300C181AF /* fetchdessertsUITestsLaunchTests.swift */; };
+		BCD283A428FF16EF00C181AF /* DessertDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD283A328FF16EF00C181AF /* DessertDetailViewController.swift */; };
+		BCD283A628FF346C00C181AF /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD283A528FF346C00C181AF /* Dessert.swift */; };
+		BCD283AA2900C1D300C181AF /* DessertsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD283A92900C1D300C181AF /* DessertsListViewModel.swift */; };
+		BCD283B02900C29A00C181AF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD283AF2900C29A00C181AF /* Helpers.swift */; };
+		BCD283B22900EE0F00C181AF /* DessertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD283B12900EE0F00C181AF /* DessertTableViewCell.swift */; };
+		BCD283B42900F05700C181AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD283B32900F05700C181AF /* Constants.swift */; };
+		BCD283B62901F8F400C181AF /* DessertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD283B52901F8F400C181AF /* DessertViewModel.swift */; };
+		BCD283B829022D9800C181AF /* DessertsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD283B729022D9800C181AF /* DessertsClient.swift */; };
+		BCD283BB290265AF00C181AF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BCD283BA290265AF00C181AF /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +48,7 @@
 		BCD2837028FDE49200C181AF /* fetchdesserts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fetchdesserts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD2837328FDE49200C181AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD2837528FDE49200C181AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCD2837728FDE49200C181AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCD2837728FDE49200C181AF /* DessertsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsListViewController.swift; sourceTree = "<group>"; };
 		BCD2837A28FDE49200C181AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCD2837C28FDE49300C181AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCD2837F28FDE49300C181AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,14 @@
 		BCD2839028FDE49300C181AF /* fetchdessertsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fetchdessertsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD2839428FDE49300C181AF /* fetchdessertsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchdessertsUITests.swift; sourceTree = "<group>"; };
 		BCD2839628FDE49300C181AF /* fetchdessertsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchdessertsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCD283A328FF16EF00C181AF /* DessertDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewController.swift; sourceTree = "<group>"; };
+		BCD283A528FF346C00C181AF /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
+		BCD283A92900C1D300C181AF /* DessertsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsListViewModel.swift; sourceTree = "<group>"; };
+		BCD283AF2900C29A00C181AF /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		BCD283B12900EE0F00C181AF /* DessertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertTableViewCell.swift; sourceTree = "<group>"; };
+		BCD283B32900F05700C181AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCD283B52901F8F400C181AF /* DessertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewModel.swift; sourceTree = "<group>"; };
+		BCD283B729022D9800C181AF /* DessertsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD283BB290265AF00C181AF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +117,14 @@
 		BCD2837228FDE49200C181AF /* fetchdesserts */ = {
 			isa = PBXGroup;
 			children = (
+				BCD283AB2900C1F700C181AF /* ViewControllers */,
+				BCD283AC2900C21100C181AF /* ViewModels */,
+				BCD283BD29049F6900C181AF /* Views */,
+				BCD283AD2900C22900C181AF /* Models */,
+				BCD283BC29049F4800C181AF /* Services */,
+				BCD283AE2900C22E00C181AF /* Utilities */,
 				BCD2837328FDE49200C181AF /* AppDelegate.swift */,
 				BCD2837528FDE49200C181AF /* SceneDelegate.swift */,
-				BCD2837728FDE49200C181AF /* ViewController.swift */,
 				BCD2837928FDE49200C181AF /* Main.storyboard */,
 				BCD2837C28FDE49300C181AF /* Assets.xcassets */,
 				BCD2837E28FDE49300C181AF /* LaunchScreen.storyboard */,
@@ -127,6 +150,57 @@
 			path = fetchdessertsUITests;
 			sourceTree = "<group>";
 		};
+		BCD283AB2900C1F700C181AF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCD2837728FDE49200C181AF /* DessertsListViewController.swift */,
+				BCD283A328FF16EF00C181AF /* DessertDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BCD283AC2900C21100C181AF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BCD283A92900C1D300C181AF /* DessertsListViewModel.swift */,
+				BCD283B52901F8F400C181AF /* DessertViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BCD283AD2900C22900C181AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCD283A528FF346C00C181AF /* Dessert.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCD283AE2900C22E00C181AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BCD283AF2900C29A00C181AF /* Helpers.swift */,
+				BCD283B32900F05700C181AF /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BCD283BC29049F4800C181AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BCD283B729022D9800C181AF /* DessertsClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BCD283BD29049F6900C181AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCD283B12900EE0F00C181AF /* DessertTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +217,9 @@
 			dependencies = (
 			);
 			name = fetchdesserts;
+			packageProductDependencies = (
+				BCD283BA290265AF00C181AF /* Kingfisher */,
+			);
 			productName = fetchdesserts;
 			productReference = BCD2837028FDE49200C181AF /* fetchdesserts.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +292,9 @@
 				Base,
 			);
 			mainGroup = BCD2836728FDE49200C181AF;
+			packageReferences = (
+				BCD283B9290265AF00C181AF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = BCD2837128FDE49200C181AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +338,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCD2837828FDE49200C181AF /* ViewController.swift in Sources */,
+				BCD283A628FF346C00C181AF /* Dessert.swift in Sources */,
+				BCD283B02900C29A00C181AF /* Helpers.swift in Sources */,
+				BCD283B62901F8F400C181AF /* DessertViewModel.swift in Sources */,
+				BCD283B22900EE0F00C181AF /* DessertTableViewCell.swift in Sources */,
+				BCD283A428FF16EF00C181AF /* DessertDetailViewController.swift in Sources */,
+				BCD283AA2900C1D300C181AF /* DessertsListViewModel.swift in Sources */,
+				BCD2837828FDE49200C181AF /* DessertsListViewController.swift in Sources */,
 				BCD2837428FDE49200C181AF /* AppDelegate.swift in Sources */,
 				BCD2837628FDE49200C181AF /* SceneDelegate.swift in Sources */,
+				BCD283B829022D9800C181AF /* DessertsClient.swift in Sources */,
+				BCD283B42900F05700C181AF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -445,6 +533,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +562,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +692,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BCD283B9290265AF00C181AF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BCD283BA290265AF00C181AF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCD283B9290265AF00C181AF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BCD2836828FDE49200C181AF /* Project object */;
 }
